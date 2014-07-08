@@ -1,0 +1,72 @@
+---
+---
+@import 'compass/css3/font-face';
+
+// override bootstrap defaults
+$font-size-base: 16px;
+$font-family-base: "Humanist 777", Helvetica, Arial, sans-serif !default;
+$dark-blue: #00017e;
+$light-blue: #ccecff;
+
+@include font-face('Humanist 777', font-files('/css/fonts/humanist-777-light-webfont.woff', '/css/fonts/humanist-777-light-webfont.ttf', '/css/fonts/humanist-777-light-webfont.svg'), '/css/fonts/humanist-777-light-webfont.eot', 300);
+@include font-face('Humanist 777', font-files('/css/fonts/humanist-777-light-italic-webfont.woff', '/css/fonts/humanist-777-light-italic-webfont.ttf', '/css/fonts/humanist-777-light-italic-webfont.svg'), '/css/fonts/humanist-777-light-italic-webfont.eot', 300, italic);
+@include font-face('Humanist 777', font-files('/css/fonts/humanist-777-webfont.woff', '/css/fonts/humanist-777-webfont.ttf', '/css/fonts/humanist-777-webfont.svg'), '/css/fonts/humanist-777-webfont.eot', 400);
+@include font-face('Humanist 777', font-files('/css/fonts/humanist-777-italic-webfont.woff', '/css/fonts/humanist-777-italic-webfont.ttf', '/css/fonts/humanist-777-italic-webfont.svg'), '/css/fonts/humanist-777-italic-webfont.eot', 400, italic);
+@include font-face('Humanist 777', font-files('/css/fonts/humanist-777-bold-webfont.woff', '/css/fonts/humanist-777-bold-webfont.ttf', '/css/fonts/humanist-777-bold-webfont.svg'), '/css/fonts/humanist-777-bold-webfont.eot', 700);
+
+@import 'bootstrap';
+
+body {
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+div.top {
+  background-color: $dark-blue;
+
+  header.site-header {
+    @extend .container;
+
+    div.hgroup {
+      @extend .row;
+      @extend .col-md-12;
+      margin: 30px -10px;
+
+      h1 {
+        color: $light-blue;
+        margin: 0;
+      }
+
+      h2 {
+        margin: 0;
+        color: #fff;
+      }
+    }
+  }
+}
+
+div.page-container {
+  @extend .container;
+
+  div.page {
+    @extend .row;
+    @extend .col-md-12;
+
+    table {
+      @extend .table;
+    }
+
+    h3 {
+      color: $dark-blue;
+    }
+
+    h4 {
+      margin-top: 22px;
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+  }
+}

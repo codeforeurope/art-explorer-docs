@@ -1,0 +1,14 @@
+# Site settings
+title: Manchester Galleries Open Data API
+email: data@manchestergalleries.org
+description: "Access open data on all the works in Manchester Art Gallery's collection."
+baseurl: ""
+url: "http://data.manchestergalleries.org"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+sass:
+  style: :compressed
+  sass_dir: _sass
